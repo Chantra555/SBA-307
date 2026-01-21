@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Page</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .sidebar {
+      min-height: 100vh;
+      background-color: #4e96dd;
+    }
+    .sidebar a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #729dc7;
+    }
+    .card-placeholder {
+      height: 80px;
+    }
+    .large-card {
+      height: 220px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Sidebar -->
+      <nav class="col-md-2 sidebar p-0">
+        <h4 class="text-white text-center py-3 border-bottom">
+          Admin Page
+        </h4>
+        <a href="#">Events</a>
+        <a href="#">Reservation</a>
+        <a href="#">Purchases</a>
+        <a href="#">Pictures</a>
+        <a href="#">Chats</a>
+        <a href="#">Mng User</a>
+        <a href="#">Accounts</a>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-10 p-4">
+        <div class="row">
+
+          <!-- Upcoming Events -->
+          <div class="col-md-8">
+            <h5 class="mb-3">Upcoming Events</h5>
+
+            <div class="card mb-3">
+              <div class="card-body card-placeholder">
+                Event Placeholder
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body card-placeholder">
+                Event Placeholder
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-body card-placeholder">
+                Event Placeholder
+              </div>
+            </div>
+
+            <!-- Your Event -->
+            <h5 class="mb-3">Your Event</h5>
+            <div class="card">
+              <div class="card-body large-card">
+                Your Event Details
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side Panel -->
+          <div class="col-md-4">
+            <h5 class="mb-3">Details</h5>
+            <div class="card large-card">
+              <div class="card-body">
+                Additional Info / Preview
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
